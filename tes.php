@@ -1,6 +1,8 @@
 Pakai ini ges klo testingm gantian biar ga conflict
 sjfghsuighwudvaifd hfvashufbjgvbwufv
 TEST MADAN
+<<<<<<< HEAD
 
 KITA MAKAN APA HARI INI
-popopo
+
+JANGAN TABRAK INI

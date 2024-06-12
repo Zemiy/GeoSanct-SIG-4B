@@ -1,1 +1,3 @@
 huhauwhauwhu
+
+TEORI TABRAK GAMING

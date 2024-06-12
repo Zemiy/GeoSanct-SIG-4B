@@ -5,3 +5,4 @@ echo "Semangat Nur";
 MADAN GAMING NJAY MABAR
 
 memek
+ADA BRO

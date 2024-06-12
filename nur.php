@@ -11,3 +11,4 @@ JEMI JEMBUT LEBAT
 test nur gaming
 
 BIKIN MODUL PLEASE
+jemi masuk kodingan

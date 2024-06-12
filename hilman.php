@@ -1,0 +1,2 @@
+nur anjing
+rizhan anjing

@@ -1,0 +1,234 @@
+.landing-page .rectangle-8 {
+  position: absolute;
+  left: -9px;
+  top: 1567px;
+  width: 1461px;
+  height: 405px;
+}
+.landing-page .rectangle-1 {
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: -9px;
+  top: -18px;
+  width: 1461px;
+  height: 438px;
+}
+.landing-page .home {
+  margin-right: 20.8px;
+  overflow-wrap: break-word;
+  font-family: 'Khula';
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.landing-page .maps {
+  margin-right: 20.9px;
+  overflow-wrap: break-word;
+  font-family: 'Khula';
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.landing-page .kecamatan {
+  overflow-wrap: break-word;
+  font-family: 'Khula';
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.landing-page .frame-2 {
+  margin: 15px 54px 15px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.landing-page .login {
+  overflow-wrap: break-word;
+  font-family: 'Khula';
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.landing-page .frame-1 {
+  background: #29BC04;
+  display: flex;
+  padding: 15px 0.3px 15px 0;
+  width: 122px;
+  box-sizing: border-box;
+}
+.landing-page .container-5 {
+  margin: 0 0 22px 450px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.landing-page .geosanct {
+  margin: 0 7px 356px 7px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--heading-1-font-family, 'Kanit');
+  font-weight: var(--heading-1-font-weight, 700);
+  font-size: var(--heading-1-font-size, 96px);
+  color: #FFFFFF;
+}
+.geosanct {
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.333;
+  color: #49CB3E;
+}
+.landing-page .rectangle-7 {
+  background: #51B740;
+  position: relative;
+  margin: 19px 20px 19px 0;
+  width: 95px;
+  height: 58px;
+}
+.landing-page .geosanct-1 {
+  margin-right: 18.1px;
+  overflow-wrap: break-word;
+  font-family: var(--heading-2-font-family, 'Kanit');
+  font-weight: var(--heading-2-font-weight, 700);
+  font-size: var(--heading-2-font-size, 64px);
+  color: #FFFFFF;
+}
+.geosanct-1 {
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.333;
+  color: #49CB3E;
+}
+.landing-page .rectangle-6 {
+  background: #51B740;
+  margin: 19px 0;
+  width: 329px;
+  height: 58px;
+}
+.landing-page .container {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.landing-page .rectangle-5 {
+  background: url('../assets/images/rectangle_5.jpeg'), url('../assets/images/rectangle_3.png') 50% / cover no-repeat, url('../assets/images/rectangle_3.png') 50% / cover no-repeat;
+  position: relative;
+  margin: 243px 56px 29px 0;
+  width: 416px;
+  height: 352px;
+}
+.landing-page .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum {
+  margin-right: 0px;
+  overflow-wrap: break-word;
+  font-family: var(--body-font-family, 'Kanit');
+  font-weight: var(--body-font-weight, 400);
+  font-size: var(--body-font-size, 32px);
+  color: #000000;
+}
+.landing-page .container-1 {
+  margin: 0 88.6px 425px 88.6px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.landing-page .group {
+  width: 72px;
+  height: 72px;
+}
+.landing-page .frame {
+  margin-right: 46px;
+  display: flex;
+  width: 72px;
+  height: 72px;
+  box-sizing: border-box;
+}
+.landing-page .layer-1 {
+  margin-right: 46.6px;
+  width: 72px;
+  height: 72px;
+}
+.landing-page .group-1 {
+  width: 70.9px;
+  height: 52.9px;
+}
+.landing-page .layer-11 {
+  margin: 7.6px 0 11.6px 0;
+  display: flex;
+  width: 70.9px;
+  height: 52.9px;
+  box-sizing: border-box;
+}
+.landing-page .container-4 {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  width: 307.4px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.landing-page .web-sig {
+  margin-bottom: 45px;
+  overflow-wrap: break-word;
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.web-sig-sub67 {
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.333;
+}
+.web-sig {
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.333;
+  color: #8FE125;
+}
+.landing-page .container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 1113.9px;
+  box-sizing: border-box;
+}
+.landing-page .container-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.landing-page .rectangle-4 {
+  background: url('../assets/images/rectangle_4.jpeg') 50% / cover no-repeat, url('../assets/images/rectangle_3.png') 50% / cover no-repeat, url('../assets/images/rectangle_3.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 243px;
+  top: 587px;
+  width: 465px;
+  height: 345px;
+}
+.landing-page .rectangle-3 {
+  background: url('../assets/images/rectangle_31.jpeg'), url('../assets/images/rectangle_3.png') 50% / cover no-repeat, url('../assets/images/rectangle_3.png') 50% / cover no-repeat;
+  position: absolute;
+  left: 152px;
+  top: 772px;
+  width: 396px;
+  height: 320px;
+}
+.landing-page {
+  background: var(--gray, #9F9B9B);
+  display: flex;
+  padding-bottom: 85px;
+  width: 1452px;
+  box-sizing: border-box;
+}

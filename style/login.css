@@ -186,6 +186,9 @@ i {
   color: #444444;
   cursor: pointer;
 }
+.back-index {
+  color: white;
+}
 #eye,
 #eye-2 {
   opacity: 1;

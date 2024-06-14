@@ -1,0 +1,262 @@
+.login-page {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(30, 30, 30, 0.95));
+  display: flex;
+  padding-left: 55px;
+  width: 1635px;
+  box-sizing: border-box;
+}
+.login-page .group-4 {
+  position: relative;
+  display: flex;
+  padding-bottom: 1px;
+  width: 827px;
+  height: 1026px;
+  box-sizing: border-box;
+}
+.login-page .rectangle-9 {
+  background: #1e1e1e;
+  position: relative;
+  width: 827px;
+  height: 1025px;
+}
+.login-page .rectangle-2 {
+  opacity: 0.2;
+  background: url("../assets/images/rectangle_2.jpeg") 50% / cover no-repeat;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1024px;
+}
+.login-page .frame-17 {
+  position: absolute;
+  top: 291px;
+  right: 9.8px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.login-page .belum-punya-akun {
+  overflow-wrap: break-word;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 96px;
+  color: #ffffff;
+}
+.login-page .daftar-disini {
+  margin: 4px 62.3px 3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+.login-page .frame-15 {
+  position: relative;
+  display: flex;
+  padding: 7px 15.8px 0 15.8px;
+  width: 213px;
+  box-sizing: border-box;
+}
+.login-page .rectangle-6 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 213px;
+  height: 67px;
+}
+.login-page .sign-in {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+.login-page .frame-14 {
+  margin-bottom: 130.5px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .line-1-stroke {
+  margin-bottom: 24px;
+  align-self: flex-start;
+  width: 281px;
+  height: 2.1px;
+}
+.login-page .welcome-silahkan-login-akun-anda {
+  margin: 0 0px 2px 0px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  color: #1e1e1e;
+}
+.welcome-silahkan-login-akun-anda {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.333;
+}
+.login-page .username {
+  opacity: 0.7;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+.login-page .password {
+  opacity: 0.7;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+.login-page .frame-16 {
+  position: relative;
+  margin-right: 38px;
+  display: flex;
+  align-self: center;
+  padding: 3.9px 0 3.1px 0.4px;
+  width: 213px;
+  box-sizing: border-box;
+}
+.login-page .rectangle-5 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 213px;
+  height: 67px;
+}
+.login-page .login {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+.login-page .frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .frame {
+  margin-right: 12.9px;
+  display: flex;
+  width: 51.3px;
+  height: 30.8px;
+  box-sizing: border-box;
+}
+.login-page .group {
+  width: 51.3px;
+  height: 30.8px;
+}
+.login-page .layer-1 {
+  margin-right: 15px;
+  width: 51px;
+  height: 44px;
+}
+.login-page .geosanctgmail-com {
+  margin: 1.4px 0 0.4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+.login-page .geo-sanct {
+  margin: 7px 0 8px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+.geosanct {
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.333;
+  color: var(--green-1, #059212);
+}
+.login-page .geosanct {
+  overflow-wrap: break-word;
+  font-family: "Kanit";
+  font-weight: 700;
+  font-size: 96px;
+  color: #ffffff;
+}
+.login-page .container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .container-1 {
+  background: #d9d9d9;
+  position: relative;
+  margin: 0 0 47px 0px;
+  padding: 22.9px 13px 23.1px 13px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .container-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.login-page .container-3 {
+  background: #1e1e1e;
+  position: absolute;
+  left: 0px;
+  top: -9px;
+  display: flex;
+  padding: 5px 32.1px 5px 0;
+  width: 814px;
+  box-sizing: border-box;
+}
+.login-page .container-4 {
+  background: #d9d9d9;
+  position: relative;
+  margin: 0 0 21px 0px;
+  padding: 23.9px 13px 22.1px 13px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .container-5 {
+  margin: 0 0 43.6px 1.9px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.login-page .container-6 {
+  margin: 297px 170px 94px 0;
+  display: flex;
+  flex-direction: column;
+  width: 583px;
+  box-sizing: border-box;
+}
+.login-page .container-7 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}

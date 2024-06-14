@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
 <div class="login-page">
   <div class="container-2">
     <div class="container-6">
@@ -5,7 +14,7 @@
         <p class="welcome-silahkan-login-akun-anda">
           <span class="welcome-silahkan-login-akun-anda-sub-0"></span><span></span>
         </p>
-        <img class="line-1-stroke" src="../assets/vectors/line_1_stroke_2_x2.svg" />
+        <img class="line-1-stroke" src="assets/vectors/line_1_stroke_2_x2.svg" />
         <div class="container-4">
           <span class="username">
             Username
@@ -17,7 +26,7 @@
           </span>
         </div>
         <div class="frame-16">
-          <img class="rectangle-5" src="../assets/vectors/rectangle_55_x2.svg" />
+          <img class="rectangle-5" src="assets/vectors/rectangle_55_x2.svg" />
           <span class="login">
             LOGIN
           </span>
@@ -26,14 +35,14 @@
       <div class="frame-7">
         <div class="container-5">
           <div class="frame">
-            <img class="group" src="../assets/vectors/group_x2.svg" />
+            <img class="group" src="assets/vectors/group_x2.svg" />
           </div>
           <div class="geosanctgmail-com">
             GEOSanct@gmail.com
           </div>
         </div>
         <div class="container-7">
-          <img class="layer-1" src="../assets/vectors/layer_11_x2.svg" />
+          <img class="layer-1" src="assets/vectors/layer_11_x2.svg" />
           <div class="geo-sanct">
             @GEO_Sanct
           </div>
@@ -55,7 +64,7 @@
             Daftar disini !
           </div>
           <div class="frame-15">
-            <img class="rectangle-6" src="../assets/vectors/rectangle_62_x2.svg" />
+            <img class="rectangle-6" src="assets/vectors/rectangle_62_x2.svg" />
             <span class="sign-in">
               SIGN IN<br />
               
@@ -71,3 +80,5 @@
     </p>
   </div>
 </div>
+</body>
+</html>

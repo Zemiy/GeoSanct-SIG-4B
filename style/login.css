@@ -2,154 +2,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
-.wrapper {
-  background: #ececec;
-  padding: 0 20px 0 20px;
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Position it behind other content */
 }
-.main {
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.side-image {
-  background-image: url("assets/images/lsmap.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10px 0 0 10px;
+.box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 20px 20px 30px 20px;
+  height: 580px;
+  width: 350px;
+  border-radius: 30px;
+  background-color: rgba(33, 30, 30, 0.406);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.box-login {
+  position: absolute;
+  width: 85%;
+  left: 27px;
+  transition: 0.5s ease-in-out;
+}
+.box-register {
+  position: absolute;
+  width: 85%;
+  right: -350px;
+  transition: 0.5s ease-in-out;
+}
+.top-header {
+  text-align: center;
+  margin: 30px 0;
+}
+.top-header .logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.top-header h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.input-group {
+  width: 100%;
+}
+.input-field {
+  margin: 12px 0;
   position: relative;
 }
-.row {
-  width: 900px;
-  height: 550px;
-  border-radius: 10px;
-  background: #fff;
-  padding: 0px;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
-}
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.text p {
-  color: #fff;
-  font-size: 20px;
-}
-i {
-  font-weight: 400;
+
+.input-box {
+  width: 100%;
+  height: 50px;
   font-size: 15px;
+  color: #040404;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 45px 0 20px;
+  background: rgba(224, 223, 223, 0.6);
+  backdrop-filter: blur(2px);
+  outline: none;
 }
-.right {
+.input-field label {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+.input-box:focus ~ label,
+.input-box:valid ~ label {
+  top: 2px;
+  font-size: 10px;
+  color: #059212;
+  font-weight: 500;
+}
+.remember {
+  display: flex;
+  font-size: 13px;
+  margin: 12px 0 30px 0;
+  color: #ffff;
+}
+.check {
+  margin-right: 8px;
+  width: 14px;
+}
+.input-submit {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  background: #059212;
+  color: #fff;
+  box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.144);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.input-submit:hover {
+  background: #04670e;
+  box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+}
+.forgot {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.forgot a {
+  text-decoration: none;
+}
+.switch {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  width: 85%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.switch a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
-.input-box {
-  width: 330px;
-  box-sizing: border-box;
-}
-img {
-  width: 35px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-.input-box header {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 45px;
-}
-.input-field {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0 10px 0 10px;
-}
-.input {
-  height: 45px;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  outline: none;
-  margin-bottom: 20px;
-  color: #40414a;
-}
-.input-box .input-field label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  pointer-events: none;
-  transition: 0.5s;
-}
-.input-field input:focus ~ label {
-  top: -10px;
-  font-size: 13px;
-}
-.input-field input:valid ~ label {
-  top: -10px;
-  font-size: 13px;
-  color: #5d5076;
-}
-.input-field .input:focus,
-.input-field .input:valid {
-  border-bottom: 1px solid #743ae1;
-}
-.submit {
-  border: none;
-  outline: none;
-  height: 45px;
-  background: #ececec;
-  border-radius: 5px;
-  transition: 0.4s;
-}
-.submit:hover {
-  background: rgba(37, 95, 156, 0.937);
-  color: #fff;
-}
-.signin {
-  text-align: center;
-  font-size: small;
-  margin-top: 25px;
-}
-span a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
   text-decoration: none;
-  font-weight: 700;
-  color: #000;
-  transition: 0.5s;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  z-index: 10;
 }
-span a:hover {
-  text-decoration: underline;
-  color: #000;
+#btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 145px;
+  height: 50px;
+  background: #cccccd;
+  border-radius: 10px;
+  box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in-out;
 }
-
-@media only screen and (max-width: 768px) {
-  .side-image {
-    border-radius: 10px 10px 0 0;
+.eye-area {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.eye-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+i {
+  position: absolute;
+  color: #444444;
+  cursor: pointer;
+}
+#eye,
+#eye-2 {
+  opacity: 1;
+}
+#eye-slash,
+#eye-slash-2 {
+  opacity: 0;
+}
+@media only screen and (max-width: 576px) {
+  .box {
+    margin: 0 5px;
   }
-  img {
-    width: 35px;
+  #btn {
     position: absolute;
-    top: 20px;
-    left: 47%;
-  }
-  .text {
-    position: absolute;
-    top: 70%;
-    text-align: center;
-  }
-  .text p,
-  i {
-    font-size: 16px;
-  }
-  .row {
-    max-width: 420px;
-    width: 100%;
+    width: 153px;
   }
 }

@@ -79,7 +79,7 @@
   border: none;
   border-radius: 10px;
   padding: 7px 45px 0 20px;
-  background: rgba(224, 223, 223, 0.6);
+  background: rgba(224, 223, 223, 0.359);
   backdrop-filter: blur(2px);
   outline: none;
 }
@@ -94,7 +94,7 @@
 .input-box:valid ~ label {
   top: 2px;
   font-size: 10px;
-  color: #059212;
+  color: #0bc31e;
   font-weight: 500;
 }
 .remember {
@@ -121,7 +121,7 @@
   transition: 0.4s;
 }
 .input-submit:hover {
-  background: #04670e;
+  background: #034b0a;
   box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
 }
 .forgot {

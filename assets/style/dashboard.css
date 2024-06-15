@@ -20,12 +20,14 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: #1e1e1e;
 }
 
 .container {
   position: relative;
   width: 100%;
 }
+
 
 /* =============== Navigation ================ */
 .navigation {

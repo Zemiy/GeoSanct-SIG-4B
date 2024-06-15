@@ -269,7 +269,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 30px;
-  
+
   /* margin-top: 10px; */
 }
 
@@ -403,7 +403,7 @@ body {
   font-weight: 500;
   line-height: 1.2rem;
   color: var(--blue);
-  }
+}
 .recentCustomers table tr td h4 span {
   font-size: 14px;
   color: var(--black2);
@@ -419,7 +419,6 @@ body {
 .recentCustomers table tr td h4:hover {
   color: white;
 }
-
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
@@ -486,6 +485,9 @@ body {
 
 .navigation img {
   margin-top: 25px;
-  margin-left: 15px;
-  width: 140px;
+  margin-left: 16px;
+  width: 154px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 15px;
 }

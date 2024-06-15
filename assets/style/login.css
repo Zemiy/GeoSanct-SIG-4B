@@ -103,7 +103,7 @@ body {
 .remember {
   display: flex;
   font-size: 13px;
-  margin: 12px 0 30px 0;
+  margin: 12px 0 0px 0;
   color: #ffff;
 }
 .check {

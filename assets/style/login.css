@@ -209,4 +209,26 @@ i {
     width: 153px;
   }
 }
+.log-error {
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
 
+.log-error.hide {
+  opacity: 0;
+  visibility: hidden;
+}

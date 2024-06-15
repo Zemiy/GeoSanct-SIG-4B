@@ -46,3 +46,18 @@ function myRegPassword() {
     c.style.opacity = "0";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const logErrorElement = document.querySelector(".log-error");
+  if (logErrorElement) {
+    setTimeout(function () {
+      logErrorElement.classList.add("hide");
+    }, 3000);
+
+    logErrorElement.addEventListener("transitionend", function () {
+      if (logErrorElement.classList.contains("hide")) {
+        logErrorElement.remove();
+      }
+    });
+  }
+});

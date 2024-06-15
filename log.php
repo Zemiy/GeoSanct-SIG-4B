@@ -11,7 +11,7 @@ $row = mysqli_fetch_array($result);
 if ($row) {
 	$_SESSION['logUsername'] = $row['username']; 
 	$_SESSION['level'] = $row['level']; 
-	header("Location: tes.php"); 
+	header("Location: dashboard.html"); 
 } else {
 	$_SESSION['login_error'] = "Username atau Password yang anda masukan salah.";
 	header("Location: login.php");

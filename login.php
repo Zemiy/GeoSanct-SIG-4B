@@ -66,17 +66,18 @@ session_start();
             <h3>BELUM PUNYA AKUN?</h3>
             <small>Daftar Sekarang</small>
           </div>
+          <form action="reg.php" METHOD="POST" name="input">
           <div class="input-group">
             <div class="input-field">
-              <input type="text" class="input-box" id="regUsername" required />
+              <input type="text" class="input-box" name="regUsername" id="regUsername" required />
               <label for="regUsername">Username</label>
             </div>
             <div class="input-field">
-              <input type="text" class="input-box" id="regLevel" required />
+              <input type="text" class="input-box" name="regLevel" id="regLevel" required />
               <label for="regLevel">administrator / pengguna</label>
             </div>
             <div class="input-field">
-              <input type="password" class="input-box" id="regPassword" required />
+              <input type="password" class="input-box" name="regPassword" id="regPassword" required />
               <label for="regPassword">Password</label>
               <div class="eye-area">
                 <div class="eye-box" onclick="myRegPassword()">
@@ -94,6 +95,7 @@ session_start();
               <input type="submit" class="input-submit" value="Sign Up" required />
             </div>
           </div>
+          </form>
         </div>
         <div class="switch">
           <a href="#" class="login active" onclick="login()">Login</a>
@@ -114,7 +116,16 @@ session_start();
         <?php
 
         unset($_SESSION['login_error']);
-    } ?>
+    }?>
+    
+  
+    
+    <?php if (isset($_SESSION['register_status']) && $_SESSION['register_status'] == 'success') { ?>
+        <div class="reg-success">Berhasil Daftar</div>
+        <?php unset($_SESSION['register_status']); ?>
+    <?php } ?>
+
+    
 
 
     <script src="assets/script/login.js"></script> 

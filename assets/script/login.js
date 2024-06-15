@@ -61,3 +61,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const regSuccessElement = document.querySelector(".reg-success");
+  if (regSuccessElement) {
+    setTimeout(function () {
+      regSuccessElement.classList.add("hide");
+    }, 3000);
+
+    regSuccessElement.addEventListener("transitionend", function () {
+      if (regSuccessElement.classList.contains("hide")) {
+        regSuccessElement.remove();
+      }
+    });
+  }
+});

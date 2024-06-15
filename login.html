@@ -12,7 +12,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/style/login.css" />
-    <link rel="stylesheet" href="assets/style/transisi.css" />
     <title>Login | GEOSanct</title>
   </head>
   <body>
@@ -66,8 +65,11 @@
               <label for="regUsername">Username</label>
             </div>
             <div class="input-field">
-              <input type="text" class="input-box" id="regLevel" required />
               <label for="regLevel">Level</label>
+              <select class="input-box" id="regLevel" required>
+                <option value="administrator">Administrator</option>
+                <option value="pengguna">Pengguna</option>
+              </select>
             </div>
             <div class="input-field">
               <input type="password" class="input-box" id="regPassword" required />

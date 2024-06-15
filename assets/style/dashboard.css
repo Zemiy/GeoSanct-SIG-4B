@@ -30,7 +30,7 @@ body {
 /* =============== Navigation ================ */
 .navigation {
   position: fixed;
-  width: 300px;
+  width: 170px;
   height: 100%;
   background: var(--blue);
   border-left: 10px solid var(--blue);
@@ -133,8 +133,8 @@ body {
 /* ===================== Main ===================== */
 .main {
   position: absolute;
-  width: calc(100% - 300px);
-  left: 300px;
+  width: calc(100% - 170px);
+  left: 170px;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
@@ -300,6 +300,10 @@ body {
   text-decoration: none;
   color: var(--white);
   border-radius: 6px;
+}
+
+.peta {
+  margin-top: 20px;
 }
 
 .details table {
@@ -482,6 +486,6 @@ body {
 
 .navigation img {
   margin-top: 25px;
-  margin-left: 7px;
-  width: 200px;
+  margin-left: 15px;
+  width: 140px;
 }

@@ -34,13 +34,13 @@ body {
   position: fixed;
   width: 170px;
   height: 100%;
-  background: var(--blue);
-  border-left: 10px solid var(--blue);
+  background: rgb(14,74,15);
+  background: linear-gradient(0deg, rgba(14,74,15,1) 20%, rgba(15,191,26,1) 50%); 
   transition: 0.5s;
   overflow: hidden;
 }
 .navigation.active {
-  width: 80px;
+  width: 70px;
 }
 
 .navigation ul {
@@ -487,8 +487,8 @@ body {
 
 .navigation img {
   margin-top: 25px;
-  margin-left: 16px;
-  width: 154px;
+  margin-left: 8px;
+  width: 300px;
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 15px;

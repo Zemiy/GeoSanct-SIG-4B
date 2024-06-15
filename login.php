@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -107,15 +107,16 @@ session_start();
     </div>
   
   
-  <?php
+    <?php if (isset($_SESSION['login_error']) && !empty($_SESSION['login_error'])) { ?>
+        <div class="log-error">
+            <?php echo $_SESSION['login_error']; ?>
+        </div>
+        <?php
 
-if (isset($_SESSION['login_error'])) {
-    echo $_SESSION['login_error'];
-} else {
-    echo '';
-}
-$_SESSION['login_error'] = '';
-?>
+        unset($_SESSION['login_error']);
+    } ?>
+
+
     <script src="assets/script/login.js"></script> 
 
   </body>

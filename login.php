@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,13 +29,14 @@
             <h3>WELCOME!!!</h3>
             <small>Silahkan login ke akun anda</small>
           </div>
+          <FORM ACTION="log.php" METHOD="POST" NAME="input">
           <div class="input-group">
             <div class="input-field">
-              <input type="text" class="input-box" id="logUsername" required />
+              <input type="text" name="logUsername" class="input-box" id="logUsername" required />
               <label for="Username">Username</label>
             </div>
             <div class="input-field">
-              <input type="password" class="input-box" id="logPassword" required />
+              <input type="password" name="logPassword" class="input-box" id="logPassword" required />
               <label for="logPassword">Password</label>
               <div class="eye-area">
                 <div class="eye-box" onclick="myLogPassword()">
@@ -45,8 +50,9 @@
               <label for="formCheck">Ingat saya!</label>
             </div>
             <div class="input-field">
-              <input type="submit" class="input-submit" value="Sign In" required />
+              <input type="submit" name="input" class="input-submit" value="Sign In" required />
             </div>
+            </FORM>
             <div class="forgot">
               <a href="#">lupa password?</a>
             </div>
@@ -99,55 +105,18 @@
         </div>
       </div>
     </div>
-    <script>
-      var x = document.getElementById("login");
-      var y = document.getElementById("register");
-      var z = document.getElementById("btn");
+  
+  
+  <?php
 
-      function login() {
-        x.style.left = "27px";
-        y.style.right = "-350px";
-        z.style.left = "0px";
-      }
-      function register() {
-        x.style.left = "-350px";
-        y.style.right = "25px";
-        z.style.left = "150px";
-      }
+if (isset($_SESSION['login_error'])) {
+    echo $_SESSION['login_error'];
+} else {
+    echo '';
+}
+$_SESSION['login_error'] = '';
+?>
+    <script src="assets/script/login.js"></script> 
 
-      // View Password codes
-
-      function myLogPassword() {
-        var a = document.getElementById("logPassword");
-        var b = document.getElementById("eye");
-        var c = document.getElementById("eye-slash");
-
-        if (a.type === "password") {
-          a.type = "text";
-          b.style.opacity = "0";
-          c.style.opacity = "1";
-        } else {
-          a.type = "password";
-          b.style.opacity = "1";
-          c.style.opacity = "0";
-        }
-      }
-
-      function myRegPassword() {
-        var d = document.getElementById("regPassword");
-        var b = document.getElementById("eye-2");
-        var c = document.getElementById("eye-slash-2");
-
-        if (d.type === "password") {
-          d.type = "text";
-          b.style.opacity = "0";
-          c.style.opacity = "1";
-        } else {
-          d.type = "password";
-          b.style.opacity = "1";
-          c.style.opacity = "0";
-        }
-      }
-    </script>
   </body>
 </html>

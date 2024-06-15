@@ -1,14 +1,11 @@
-Pakai ini ges klo testingm gantian biar ga conflict
-sjfghsuighwudvaifd hfvashufbjgvbwufv
-TEST MADAN
-<<<<<<< HEAD
-
-KITA MAKAN APA HARI INI
-
-JANGAN TABRAK INI
-
-
-
-
-
-snfusf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    tes masuk wak mantab
+</body>
+</html>

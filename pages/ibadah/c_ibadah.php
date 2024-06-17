@@ -14,15 +14,17 @@ $stmt->bind_param("sssssi", $kd_tempat, $nama_tempat, $jenis_tempat, $alamat_tem
 if ($stmt->execute()) {
     session_start();
     $_SESSION['create_success'] = 'Data berhasil diinput';
+    $stmt->close();
     header("Location: ibadah.php");
     exit();
 } else {
     session_start();
-    $_SESSION['create_error'] = "Data gagal diinput: " . $stmt->error;
+    $_SESSION['create_error'] = "Data gagal diinput " . $stmt->error;
+    $stmt->close();
     header("Location: ibadah.php");
     exit();
 }
 
 
-$stmt->close();
+
 ?>

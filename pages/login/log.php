@@ -16,14 +16,16 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 if ($row) {
     $_SESSION['logUsername'] = $row['username'];
     $_SESSION['level'] = $row['level'];
+	$stmt->close();
     header("Location: ../dashboard/dashboard.html");
     exit();
 } else {
     $_SESSION['login_error'] = "Username atau Password yang anda masukan salah.";
+	$stmt->close();
     header("Location:login.php");
     exit();
 }
 
 
-$stmt->close();
+
 ?>

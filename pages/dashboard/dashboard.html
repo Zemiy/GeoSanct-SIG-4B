@@ -252,6 +252,15 @@
             }
         });
         map.addControl(drawControl);
+
+        map.on ('draw:created', function(event){
+            var layer = event.layer;
+            var feature = layer.feature = layer.feature || {};
+            feature.type = feature.type || "Feature";
+            var props = feature.properties = feature.properties ||{};
+            drawnItems.addLayer(layer);
+        }
+    )
 </script>
 
 </html>

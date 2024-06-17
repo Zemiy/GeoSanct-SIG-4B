@@ -15,21 +15,21 @@ session_start();
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/style/login.css" />
-    <link rel="stylesheet" href="assets/style/transition.css" />
+    <link rel="stylesheet" href="../../assets/style/login.css" />
+    <link rel="stylesheet" href="../../assets/style/transition.css" />
     <title>Login | GEOSanct</title>
   </head>
   <body>
-    <img src="assets/images/login-bg.png" alt="Background Image" class="background-image" />
+    <img src="../../assets/images/login-bg.png" alt="Background Image" class="background-image" />
     <div class="container">
       <div class="box">
         <div class="box-login" id="login">
           <div class="top-header">
-            <img src="assets/images/logo.png" alt="Logo" class="logo" />
+            <img src="../../assets/images/logo.png" alt="Logo" class="logo" />
             <h3>WELCOME!!!</h3>
             <small>Silahkan login ke akun anda</small>
           </div>
-          <FORM ACTION="controllers/log.php" METHOD="POST" NAME="input">
+          <FORM ACTION="log.php" METHOD="POST" NAME="input">
           <div class="input-group">
             <div class="input-field">
               <input type="text" name="logUsername" class="input-box" id="logUsername" required />
@@ -66,7 +66,7 @@ session_start();
             <h3>BELUM PUNYA AKUN?</h3>
             <small>Daftar Sekarang</small>
           </div>
-          <form action="controllers/reg.php" METHOD="POST" name="input">
+          <form action="reg.php" METHOD="POST" name="input">
           <div class="input-group">
             <div class="input-field">
               <input type="text" class="input-box" name="regUsername" id="regUsername" required />
@@ -124,7 +124,7 @@ session_start();
         <div class="reg-success">Berhasil Daftar</div>
         <?php unset($_SESSION['register_status']); ?>
     <?php } ?>
-    <script src="assets/script/login.js"></script> 
+    <script src="../../assets/script/login.js"></script> 
 
   </body>
 </html>

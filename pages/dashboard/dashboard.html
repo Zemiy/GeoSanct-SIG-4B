@@ -255,7 +255,13 @@
         var drawnItems = new L.FeatureGroup();
         map.addLayer(drawnItems);
         var drawControl = new L.Control.Draw({
-            edit: {
+            draw: {
+                polygon: false,
+                polyline: false,
+                rectangle: false,
+                circle: false,
+                circlemarker: false
+            },edit: {
                 featureGroup: drawnItems
             }
         });
@@ -267,8 +273,12 @@
             feature.type = feature.type || "Feature";
             var props = feature.properties = feature.properties ||{};
             drawnItems.addLayer(layer);
-        }
-    )
+        })
+
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent('<p>Hello world!<br />This is a nice popup.</p>')
+            .openOn(map);
 </script>
 
 </html>

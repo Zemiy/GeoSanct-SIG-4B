@@ -233,10 +233,10 @@
 </body>
 <script>
     var map  = L.map('map').setView([-2.539391, 112.958204], 13);
-    // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //     maxZoom: 19,
-    //     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    // }).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
     /// Tampilan Maps Tampilan Satellite -->
 		// L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}?access_token={accessToken}', {
@@ -255,19 +255,17 @@
         var drawnItems = new L.FeatureGroup();
         map.addLayer(drawnItems);
         var drawControl = new L.Control.Draw({
-            draw:{
+            draw: {
+                polygon: false,
+                polyline: false,
                 rectangle: false,
                 circle: false,
-                circlemarker: false,
-                polyline: false,
-                polygon: false
-            },
-            edit: {
+                circlemarker: false
+            },edit: {
                 featureGroup: drawnItems
             }
         });
         map.addControl(drawControl);
-
 
         map.on ('draw:created', function(event){
             var layer = event.layer;
@@ -277,8 +275,10 @@
             drawnItems.addLayer(layer);
         })
 
-
-
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent('<p>Hello world!<br />This is a nice popup.</p>')
+            .openOn(map);
 </script>
 
 </html>

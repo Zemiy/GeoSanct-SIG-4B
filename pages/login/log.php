@@ -1,20 +1,29 @@
 <?php
-session_start(); 
+session_start();
 include '../../database/koneksi.php';
 
 $user = $_POST['logUsername'];
 $pass = $_POST['logPassword'];
 
-$result = mysqli_query($conn, "SELECT * FROM login where username='$user' and password='$pass'");
-$row = mysqli_fetch_array($result);
+
+$stmt = $conn->prepare("SELECT * FROM login WHERE username = ? AND password = ?");
+$stmt->bind_param("ss", $user, $pass); 
+
+$stmt->execute();
+$result = $stmt->get_result();
+$row = $result->fetch_array(MYSQLI_ASSOC);
 
 if ($row) {
-	$_SESSION['logUsername'] = $row['username']; 
-	$_SESSION['level'] = $row['level']; 
-	header("Location: ../dashboard/dashboard.html"); 
+    $_SESSION['logUsername'] = $row['username'];
+    $_SESSION['level'] = $row['level'];
+    header("Location: ../dashboard/dashboard.html");
+    exit();
 } else {
-	$_SESSION['login_error'] = "Username atau Password yang anda masukan salah.";
-	header("Location:login.php");
+    $_SESSION['login_error'] = "Username atau Password yang anda masukan salah.";
+    header("Location:login.php");
+    exit();
 }
 
+
+$stmt->close();
 ?>

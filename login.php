@@ -29,7 +29,7 @@ session_start();
             <h3>WELCOME!!!</h3>
             <small>Silahkan login ke akun anda</small>
           </div>
-          <FORM ACTION="log.php" METHOD="POST" NAME="input">
+          <FORM ACTION="controllers/log.php" METHOD="POST" NAME="input">
           <div class="input-group">
             <div class="input-field">
               <input type="text" name="logUsername" class="input-box" id="logUsername" required />
@@ -66,7 +66,7 @@ session_start();
             <h3>BELUM PUNYA AKUN?</h3>
             <small>Daftar Sekarang</small>
           </div>
-          <form action="reg.php" METHOD="POST" name="input">
+          <form action="controllers/reg.php" METHOD="POST" name="input">
           <div class="input-group">
             <div class="input-field">
               <input type="text" class="input-box" name="regUsername" id="regUsername" required />

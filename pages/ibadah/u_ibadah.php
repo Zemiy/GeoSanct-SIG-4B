@@ -10,7 +10,7 @@ $kd_kelurahan = $_POST['kd-kelurahan'];
 $kapasitas_tempat = $_POST['kapasitas-tempat'];
 
 $stmt = $conn->prepare("UPDATE `ibadah` SET `nama` = ?, `jenis` = ?, `alamat` = ?, `kd_kelurahan` = ?, `kapasitas` = ? WHERE `kd_tempat` = ?");
-$stmt->bind_param("sssssi", $nama_tempat, $jenis_tempat, $alamat_tempat, $kd_kelurahan, $kapasitas_tempat, $kd_tempat);
+$stmt->bind_param("ssssis", $nama_tempat, $jenis_tempat, $alamat_tempat, $kd_kelurahan, $kapasitas_tempat, $kd_tempat);
 
 if ($stmt->execute()) {
     $_SESSION['update_success'] = 'Data berhasil diupdate';

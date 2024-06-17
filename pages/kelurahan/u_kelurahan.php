@@ -6,8 +6,8 @@ $kd_kelurahan = $_POST['kd-kelurahan'];
 $nama_kelurahan = $_POST['nama-kelurahan'];
 $jumlah_tempat = $_POST['jumlah-tempat'];
 
-$stmt = $conn->prepare("INSERT INTO `kelurahan` (`kd_kelurahan`, `nama_kelurahan`, `jumlah_tempat`) VALUES (?, ?, ?)");
-$stmt->bind_param("ssi", $kd_kelurahan, $nama_kelurahan,$jumlah_tempat); 
+$stmt = $conn->prepare("UPDATE `kelurahan` SET `nama_kelurahan` = ?, `jumlah_tempat_ibadah` = ? WHERE `kd_kelurahan` = ?");
+$stmt->bind_param("sis", $nama_kelurahan, $jumlah_tempat,$kd_kelurahan);
 
 if ($stmt->execute()) {
     $_SESSION['update_success'] = 'Data berhasil diupdate';
@@ -20,6 +20,4 @@ if ($stmt->execute()) {
     header("Location: kelurahan.php");
     exit();
 }
-
-
 ?>

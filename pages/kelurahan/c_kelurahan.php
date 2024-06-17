@@ -6,7 +6,7 @@ $nama_kelurahan = $_POST['nama-kelurahan'];
 $jumlah_tempat = $_POST['jumlah-tempat'];
 
 
-$stmt = $conn->prepare("INSERT INTO `kelurahan` (`kd_kelurahan`, `nama_kelurahan`, `jumlah_tempat``) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO `kelurahan` (`kd_kelurahan`, `nama_kelurahan`, `jumlah_tempat_ibadah`) VALUES (?, ?, ?)");
 $stmt->bind_param("ssi", $kd_kelurahan,$nama_kelurahan,$jumlah_tempat);
 
 if ($stmt->execute()) {

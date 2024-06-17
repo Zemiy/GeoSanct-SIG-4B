@@ -2,7 +2,7 @@
 include '../../database/koneksi.php';
 $kd_kelurahan = $_POST['kd-kelurahan'];
 
-$stmt = $conn->prepare("DELETE FROM bagian WHERE kd_kelurahan = ?");
+$stmt = $conn->prepare("DELETE FROM kelurahan WHERE kd_kelurahan = ?");
 $stmt->bind_param("s", $kd_kelurahan); 
 
 if ($stmt->execute()) {

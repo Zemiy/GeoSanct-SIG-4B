@@ -16,7 +16,6 @@ session_start();
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../../assets/style/login.css" />
-    <link rel="stylesheet" href="../../assets/style/transition.css" />
     <title>Login | GEOSanct</title>
   </head>
   <body>

@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-include 'koneksi.php';
+include '../../database/koneksi.php';
 
 $user = $_POST['logUsername'];
 $pass = $_POST['logPassword'];

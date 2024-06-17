@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include '../database/koneksi.php';
 
 $user = $_POST['regUsername'];
 $level = $_POST['regLevel'];

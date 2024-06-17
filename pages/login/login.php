@@ -124,10 +124,6 @@ session_start();
         <div class="reg-success">Berhasil Daftar</div>
         <?php unset($_SESSION['register_status']); ?>
     <?php } ?>
-
-    
-
-
     <script src="assets/script/login.js"></script> 
 
   </body>

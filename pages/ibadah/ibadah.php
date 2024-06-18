@@ -3,94 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Data Ibadah</title>
-    <link rel="stylesheet" href="ibadah.css">
+    <title>Data Tempat Ibadah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/style/ibadah.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-T4mxzZL3dXox4U6DR4jTptHuxYrwJp8jKcNk8y9QbJqXH1QyVlT8oRqkLJ9CtfhO4IVZ9lql0SiHvcV+9ThdVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h2>Input Data Ibadah</h2>
-    <form id="ibadah-form" action="c_ibadah.php" method="post">
-        <label for="kd-tempat">Kode Tempat:</label><br>
-        <input type="text" id="kd-tempat" name="kd-tempat" required><br><br>
-        
-        <label for="nama-tempat">Nama Tempat:</label><br>
-        <input type="text" id="nama-tempat" name="nama-tempat" required><br><br>
-        
-        <label for="jenis-tempat">Jenis Tempat:</label><br>
-        <input type="text" id="jenis-tempat" name="jenis-tempat" required><br><br>
-        
-        <label for="alamat-tempat">Alamat Tempat:</label><br>
-        <textarea id="alamat-tempat" name="alamat-tempat" rows="4" required></textarea><br><br>
-        
-        <label for="kd-kelurahan">Kode Kelurahan:</label><br>
-        <input type="text" id="kd-kelurahan" name="kd-kelurahan" required><br><br>
-        
-        <label for="kapasitas-tempat">Kapasitas Tempat:</label><br>
-        <input type="number" id="kapasitas-tempat" name="kapasitas-tempat" required><br><br>
-        
-        <input type="submit" value="Submit">
-        <input type="button" value="Update" id="update-button" onclick="updateData()" style="display: none;">
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Data Tempat Ibadah</h3>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="t_ibadah.php" class="btn btn-success">
+                    <i class="fas fa-plus"></i> Tambah
+                </a>
+            </div>
+        </div>
 
-    <!-- Tabel untuk menampilkan data yang sudah diinput -->
-    <?php
-    include '../../database/koneksi.php';
+        <?php
+        include '../../database/koneksi.php';
 
-    // Query untuk mengambil data ibadah
-    $query = "SELECT * FROM ibadah";
-    $result = mysqli_query($conn, $query);
+        // Query untuk mengambil data ibadah
+        $query = "SELECT * FROM ibadah";
+        $result = mysqli_query($conn, $query);
 
-    if (mysqli_num_rows($result) > 0) {
-        echo "<h2>Data yang sudah diinput:</h2>";
-        echo "<table>";
-        echo "<tr>
-                <th>Kode Tempat</th>
-                <th>Nama Tempat</th>
-                <th>Jenis Tempat</th>
-                <th>Alamat Tempat</th>
-                <th>Kode Kelurahan</th>
-                <th>Kapasitas Tempat</th>
-                <th>Aksi</th>
-              </tr>";
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo "<tr>";
-            echo "<td>" . htmlspecialchars($row['kd_tempat']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['nama']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['jenis']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['kd_kelurahan']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['kapasitas']) . "</td>";
-            echo "<td>
-                    <button onclick='selectData(" . json_encode($row) . ")'>Select</button>
-                    <form action='d_ibadah.php' method='post' style='display:inline;'>
-                        <input type='hidden' name='kd-tempat' value='" . htmlspecialchars($row['kd_tempat']) . "'>
-                        <input type='submit' value='Delete'>
-                    </form>
-                  </td>";
-            echo "</tr>";
+        if (mysqli_num_rows($result) > 0) {
+            echo "<table class='table'>";
+            echo "<thead class='thead-light'>
+                    <tr>
+                        <th scope='col'>Kode Tempat</th>
+                        <th scope='col'>Nama Tempat</th>
+                        <th scope='col'>Jenis Tempat</th>
+                        <th scope='col'>Alamat Tempat</th>
+                        <th scope='col'>Kode Kelurahan</th>
+                        <th scope='col'>Kapasitas Tempat</th>
+                        <th scope='col'>Opsi</th>
+                    </tr>
+                  </thead>";
+            echo "<tbody>";
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row['kd_tempat']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['nama']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['jenis']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['kd_kelurahan']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['kapasitas']) . "</td>";
+                echo "<td>
+                        <button onclick='selectData(" . json_encode($row) . ")' class='btn btn-primary btn-sm'><i class='fas fa-edit'></i> Edit</button>
+                        <form action='d_ibadah.php' method='post' style='display:inline;'>
+                            <input type='hidden' name='kd-tempat' value='" . htmlspecialchars($row['kd_tempat']) . "'>
+                            <button type='submit' class='btn btn-danger btn-sm'><i class='fas fa-trash'></i> Delete</button>
+                        </form>
+                      </td>";
+                echo "</tr>";
+            }
+            echo "</tbody>";
+            echo "</table>";
+        } else {
+            echo "<p class='mt-3'>Tidak ada data yang diinput.</p>";
         }
-        echo "</table>";
-    } else {
-        echo "<p>Tidak ada data yang diinput.</p>";
-    }
 
-    mysqli_close($conn);
-    ?>
+        mysqli_close($conn);
+        ?>
 
+    </div>
+
+    <!-- Bootstrap JS and other scripts if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         function selectData(data) {
-            document.getElementById('kd-tempat').value = data.kd_tempat;
-            document.getElementById('nama-tempat').value = data.nama;
-            document.getElementById('jenis-tempat').value = data.jenis;
-            document.getElementById('alamat-tempat').value = data.alamat;
-            document.getElementById('kd-kelurahan').value = data.kd_kelurahan;
-            document.getElementById('kapasitas-tempat').value = data.kapasitas;
-            document.getElementById('ibadah-form').action = 'u_ibadah.php';
-            document.getElementById('update-button').style.display = 'inline';
-            document.querySelector('input[type="submit"]').style.display = 'none';
-        }
-
-        function updateData() {
-            document.getElementById('ibadah-form').submit();
+            // Redirect to the input form page with data as query parameters
+            let url = "t_ibadah.php?";
+            for (let key in data) {
+                url += `${key}=${encodeURIComponent(data[key])}&`;
+            }
+            window.location.href = url.slice(0, -1); // Remove the last '&'
         }
     </script>
 </body>

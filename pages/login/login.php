@@ -15,6 +15,7 @@ session_start();
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../../assets/style/transisi.css">
     <link rel="stylesheet" href="../../assets/style/login.css" />
     <title>Login | GEOSanct</title>
   </head>

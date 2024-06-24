@@ -103,7 +103,7 @@ session_start();
           <div class="btn-active" id="btn"></div>
         </div>
         <div class="back-index">
-          <a href="index.html"><<<</a>
+          <a href="../../landing-page"><<<</a>
         </div>
       </div>
     </div>

@@ -34,10 +34,10 @@ if ($level !== 'kepala') {
 
     <!-- Style -->
     <link rel="stylesheet" href="../../assets/style/dashboard.css">
-    <link rel="stylesheet" href="../../assets/style/leaflet.css" >
+    <link rel="stylesheet" href="../../assets/style/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="../../assets/style/transisi.css"> 
 
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
 
     
 </head>
@@ -248,7 +248,7 @@ if ($level !== 'kepala') {
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../../ssets/script/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../../assets/script/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </body>
 <script>
     var map  = L.map('map').setView([-2.539391, 112.958204], 13);

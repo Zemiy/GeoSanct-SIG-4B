@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2024 at 05:16 PM
+-- Generation Time: Jun 25, 2024 at 12:24 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -33,7 +33,9 @@ CREATE TABLE `ibadah` (
   `jenis` varchar(20) NOT NULL,
   `alamat` varchar(30) NOT NULL,
   `kd_kelurahan` varchar(11) NOT NULL,
-  `kapasitas` int(10) NOT NULL
+  `kapasitas` int(10) NOT NULL,
+  `lat` float(10,6) NOT NULL,
+  `lng` float(10,6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -57,20 +59,8 @@ CREATE TABLE `kelurahan` (
 CREATE TABLE `login` (
   `username` varchar(25) NOT NULL,
   `password` varchar(16) NOT NULL,
-  `level` enum('administrator','pengguna') NOT NULL
+  `level` enum('administrator','kepala') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `login`
---
-
-INSERT INTO `login` (`username`, `password`, `level`) VALUES
-('1212121', 'qwer', 'administrator'),
-('2210010295', 'rizhanganteng123', 'administrator'),
-('22100106777', 'rizhan123', 'pengguna'),
-('22100106969', 'rizhan123', 'administrator'),
-('2210016666', 'nurganteng123', 'administrator'),
-('69696969', 'asdasdasd', 'administrator');
 
 --
 -- Indexes for dumped tables

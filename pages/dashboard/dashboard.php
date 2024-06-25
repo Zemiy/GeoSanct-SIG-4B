@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['logUsername'])) {
+    header("Location: ../login/login.php");
+    exit();
+}
+
+$level = $_SESSION['level'];
+if ($level !== 'kepala') {
+    echo "Anda tidak memiliki izin untuk mengakses halaman ini.";
+    exit();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
